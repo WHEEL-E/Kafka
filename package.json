@@ -1,0 +1,25 @@
+{
+  "name": "wikimediakafkaproject",
+  "version": "1.0.0",
+  "description": "Practing Project on Working with Kafka",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Hassan",
+  "license": "ISC",
+  "dependencies": {
+    "eventsource": "^2.0.2",
+    "ip": "^1.1.8",
+    "kafkajs": "^2.0.2",
+    "ts-node": "^10.8.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/eventsource": "^1.1.8",
+    "@types/ip": "^1.1.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}
