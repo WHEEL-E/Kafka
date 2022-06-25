@@ -1,14 +1,7 @@
-import EventSource from "eventsource";
+import run from "./Consumer";
+import producer from "./Producer";
 
 const DataSourceURL = "https://stream.wikimedia.org/v2/stream/recentchange";
-const eventsource = new EventSource(DataSourceURL);
+const topic = "TestingTopic";
 
-eventsource.addEventListener("open", (event) => {
-  console.log(event);
-});
-eventsource.addEventListener("error", (event) => {
-  console.log(event);
-});
-eventsource.addEventListener("message", (event) => {
-  console.log(event);
-});
+run(topic).catch((e) => console.error(`[example/consumer] ${e.message}`, e));

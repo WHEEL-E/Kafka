@@ -10,7 +10,6 @@
   "author": "Mohammed Hassan",
   "license": "ISC",
   "dependencies": {
-    "eventsource": "^2.0.2",
     "ip": "^1.1.8",
     "kafkajs": "^2.0.2",
     "ts-node": "^10.8.1"
