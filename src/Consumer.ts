@@ -1,6 +1,6 @@
 import kafka from "./Kafka";
 
-const consumer = kafka.consumer({ groupId: "test-group" });
+const consumer = kafka.consumer({ groupId: "storage-consuming-group" });
 
 const run = async (topic: string) => {
   await consumer.connect();
